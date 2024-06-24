@@ -5,6 +5,7 @@
     <div class="logo">
       <img class="logo-img" :src="siteLogo" alt="logo" />
       <div :class="{ name: true, 'text-hidden': true, long: siteUrl[0].length >= 6 }">
+        <!-- 主界面 Logo 后面的文字样式在这里修改 -->
         <span class="bg">{{ siteUrl[0] }}</span>
         <span class="sm">.{{ siteUrl[1] }}</span>
       </div>
@@ -106,7 +107,7 @@ watch(
       font-family: "Pacifico-Regular";
 
       .bg {
-        font-size: 5rem;
+        font-size: 2rem;
       }
 
       .sm {

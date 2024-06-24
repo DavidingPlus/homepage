@@ -1,5 +1,7 @@
 <template>
-  <div class="more-content">您可在此编写任意内容</div>
+  <!-- TODO 可以在这里面写在时光胶囊页面中下面展示的文字内容 -->
+  <!-- <div class="more-content">您可在此编写任意内容</div> -->
+  <div class="more-content"></div>
 </template>
 
 <style lang="scss" scoped>
