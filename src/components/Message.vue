@@ -5,9 +5,10 @@
     <div class="logo">
       <img class="logo-img" :src="siteLogo" alt="logo" />
       <div :class="{ name: true, 'text-hidden': true, long: siteUrl[0].length >= 6 }">
-        <!-- 主界面 Logo 后面的文字样式在这里修改 -->
-        <span class="bg">{{ siteUrl[0] }}</span>
-        <span class="sm">.{{ siteUrl[1] }}</span>
+        <!-- TODO 主界面 logo 后面的文字以及样式在这里修改 -->
+        <!-- <span class="bg">{{ siteUrl[0] }}</span> -->
+        <!-- <span class="sm">.{{ siteUrl[1] }}</span> -->
+        <span class="bg">{{ siteName }}</span>
       </div>
     </div>
     <!-- 简介 -->
@@ -39,6 +40,8 @@ const store = mainStore();
 
 // 主页站点logo
 const siteLogo = import.meta.env.VITE_SITE_MAIN_LOGO;
+// 主页站点名称
+const siteName = import.meta.env.VITE_SITE_NAME;
 // 站点链接
 const siteUrl = computed(() => {
   const url = import.meta.env.VITE_SITE_URL;
@@ -107,7 +110,7 @@ watch(
       font-family: "Pacifico-Regular";
 
       .bg {
-        font-size: 2rem;
+        font-size: 3rem;
       }
 
       .sm {
