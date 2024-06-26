@@ -8,5 +8,10 @@
     "icon": "Sourcetree",
     "name": "源码网站",
     "link": "https://code.lzx0626.me/"
+  },
+  {
+    "icon": "Book",
+    "name": "LarkSDK 手册",
+    "link": "http://caiyi.tech/larksdk/"
   }
 ]
