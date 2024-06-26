@@ -62,10 +62,10 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git clone --depth=1 --branch=gh-pages https://github.com/${{ github.repository }} gh-pages
           Remove-Item -Recurse -Force gh-pages\public
-          Copy-Item -Recurse -Force public gh-pages\
+          Copy-Item -Recurse public gh-pages\
           cd gh-pages
           git add .
           git commit -m "Update public directory automatically"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
