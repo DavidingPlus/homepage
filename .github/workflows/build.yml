@@ -39,7 +39,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       # 上传构建产物
       - name: Upload artifacts
-        # 选择合适的版本 https://github.com/actions/upload-artifact/
+        # 链接 https://github.com/actions/upload-artifact/
         uses: actions/upload-artifact@v4.3.0
         with:
           name: Homepage
@@ -47,25 +47,14 @@ jobs:
         
       # TODO 以下是自动化将打包的静态页面部署到 gh-pages 分支的脚本
 
-      # 下载构建产物
-      - name: Download artifacts
-        # 选择合适的版本 https://github.com/actions/download-artifact/
-        uses: actions/download-artifact@v4.1.0
-        with:
-          name: Homepage
-          path: public
       # 部署到 gh-pages 分支
       - name: Deploy to gh-pages
-        # 注意这下面的命令全都是 windows 下的命令
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git clone --depth=1 --branch=gh-pages https://github.com/${{ github.repository }} gh-pages
-          Remove-Item -Recurse -Force gh-pages\public
-          Copy-Item -Recurse public gh-pages\
-          cd gh-pages
-          git add .
-          git commit -m "Update public directory automatically"
-          git push
+        # 链接 https://github.com/crazy-max/ghaction-github-pages/
+        uses: crazy-max/ghaction-github-pages@v4.0.0
+        with:
+          target_branch: gh-pages
+          build_dir: dist
+          keep_history: true
+          fqdn: lzx0626.me
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}   
