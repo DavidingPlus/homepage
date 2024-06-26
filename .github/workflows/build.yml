@@ -44,3 +44,27 @@ jobs:
         with:
           name: Homepage
           path: dist
+        
+      # TODO 以下是自动化将打包的静态页面部署到 gh-pages 分支的脚本
+
+      # 下载构建产物
+      - name: Download artifacts
+        # 选择合适的版本 https://github.com/actions/download-artifact/
+        uses: actions/download-artifact@v4.1.0
+        with:
+          name: public
+          path: Homepage
+      # 部署到 gh-pages 分支
+      - name: Deploy to gh-pages
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git clone --depth=1 --branch=gh-pages https://github.com/${{ github.repository }} gh-pages
+          rm -rf gh-pages/public
+          cp -r public gh-pages/public
+          cd gh-pages
+          git add .
+          git commit -m "Update public directory automaticly"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
