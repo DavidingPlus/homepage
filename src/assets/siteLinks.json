@@ -1,12 +1,12 @@
 [
   {
     "icon": "Blog",
-    "name": "博客",
+    "name": "个人博客",
     "link": "https://blog.lzx0626.me/"
   },
   {
-    "icon": "Sourcetree",
-    "name": "源码网站",
+    "icon": "FileCode",
+    "name": "Code Browser",
     "link": "https://code.lzx0626.me/"
   },
   {
