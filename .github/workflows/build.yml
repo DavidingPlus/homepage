@@ -1,11 +1,11 @@
-# Code 分支推送部署预览
+# feature-my-homepage 分支推送部署预览
 ## 仅部署 Win 端
-name: Build Code
+name: Build Source Code
 
 on:
   push:
     branches:
-      - code
+      - feature-my-homepage
 
 jobs:
   release:
