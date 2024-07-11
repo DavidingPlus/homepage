@@ -14,14 +14,14 @@
   {
     "name": "QQ",
     "icon": "/images/icon/qq.png",
-    "tip": "2065666169",
-    "url": ""
+    "tip": "请 QQ 联系我",
+    "url": "http://106.55.60.140/images/social/qq.webp"
   },
   {
     "name": "Wechat",
     "icon": "/images/icon/wechat.png",
-    "tip": "lzx_DavidingPlus",
-    "url": ""
+    "tip": "请加我 Wechat 交流",
+    "url": "http://106.55.60.140/images/social/wechat.webp"
   },
   {
     "name": "Email",
