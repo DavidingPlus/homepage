@@ -7,11 +7,11 @@
   {
     "icon": "FileCode",
     "name": "Code Browser",
-    "link": "https://davidingplus.github.io/code-browser"
+    "link": "https://davidingplus.github.io/code-browser/"
   },
   {
     "icon": "Book",
     "name": "LarkSDK 手册",
-    "link": "http://caiyi.tech/larksdk/"
+    "link": "https://larksdk.davidingplus.cn/"
   }
 ]
