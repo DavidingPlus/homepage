@@ -1,4 +1,4 @@
-English | [Chinese](./README.md)
+English | [Chinese](./README-dev.md)
 
 > [!IMPORTANT]
 > ## 致大家
