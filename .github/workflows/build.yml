@@ -1,11 +1,11 @@
-# feature-my-homepage 分支推送部署预览
+# feature-liuzx-homepage 分支推送部署预览
 
 name: Build and Deploy
 
 on:
   push:
     branches:
-      - feature-my-homepage
+      - feature-liuzx-homepage
 
 jobs:
   build:
