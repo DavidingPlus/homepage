@@ -71,7 +71,7 @@ jobs:
         with:
           target_branch: gh-pages-deprecated
           build_dir: dist
-          keep_history: true
+          keep_history: false # 同 blog，关闭 git 历史
           # fqdn: xxx 自定义域名
           allow_empty_commit: false
         env:
