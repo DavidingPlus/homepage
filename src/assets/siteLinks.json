@@ -13,5 +13,10 @@
     "icon": "Book",
     "name": "LarkSDK 手册",
     "link": "https://larksdk.davidingplus.cn/"
+  },
+  {
+    "icon": "Tools",
+    "name": "IT Tools",
+    "link": "https://it-tools.tech/"
   }
 ]
