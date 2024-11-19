@@ -53,7 +53,7 @@ class Cursor {
     for (let i = 0; i < el.length; i++)
       if (getStyle(el[i], "cursor") == "pointer") this.pt.push(el[i].outerHTML);
 
-    // TODO 修改 fill 属性的值可以修改鼠标指针的颜色
+    // 修改 fill 属性的值可以修改鼠标指针的颜色
     document.body.appendChild((this.scr = document.createElement("style")));
     this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='10px' height='10px'><circle cx='4' cy='4' r='4' fill='pink' /></svg>") 4 4, auto !important}`;
   }

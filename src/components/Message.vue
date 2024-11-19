@@ -5,7 +5,7 @@
     <div class="logo">
       <img class="logo-img" :src="siteLogo" alt="logo" />
       <div :class="{ name: true, 'text-hidden': true, long: siteUrl[0].length >= 6 }">
-        <!-- TODO 主界面 logo 后面的文字以及样式在这里修改 -->
+        <!-- 主界面 logo 后面的文字以及样式在这里修改 -->
         <!-- <span class="bg">{{ siteUrl[0] }}</span> -->
         <!-- <span class="sm">.{{ siteUrl[1] }}</span> -->
         <span class="bg">{{ siteName }}</span>
