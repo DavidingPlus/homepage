@@ -54,7 +54,7 @@ jobs:
   # 为了互不影响，采用并行执行的方式
 
   deploy-gh-pages:
-    name: Deploy to gh-pages
+    name: Deploy to gh-pages-deprecated
     runs-on: ubuntu-latest
     needs: build  # 表示依赖于 build 作业完成
     steps:
