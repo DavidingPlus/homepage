@@ -1,11 +1,5 @@
 [
   {
-    "name": "CSDN",
-    "icon": "/images/icon/csdn.png",
-    "tip": "来看看我的 CSDN 吧",
-    "url": "https://blog.csdn.net/m0_61588837?spm=1000.2115.3001.5343"
-  },
-  {
     "name": "Github",
     "icon": "/images/icon/github.png",
     "tip": "去 Github 看看",
