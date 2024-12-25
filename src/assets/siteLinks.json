@@ -1,12 +1,12 @@
 [
   {
     "icon": "Blog",
-    "name": "个人博客",
+    "name": "Blog",
     "link": "https://blog.davidingplus.cn/"
   },
   {
     "icon": "Book",
-    "name": "LarkSDK 手册",
+    "name": "LarkSDK",
     "link": "http://caiyi.tech/larksdk/"
   },
   {
