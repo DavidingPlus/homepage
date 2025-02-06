@@ -18,5 +18,10 @@
     "icon": "Newspaper",
     "name": "My Arxiv",
     "link": "https://davidingplus.github.io/my-arxiv/"
+  },
+  {
+    "icon": "CompactDisc",
+    "name": "Meting API",
+    "link": "https://meting-api.davidingplus.cn/"
   }
 ]
