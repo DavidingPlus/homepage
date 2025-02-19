@@ -23,5 +23,10 @@
     "icon": "CompactDisc",
     "name": "Meting API",
     "link": "https://meting-api.davidingplus.cn/"
+  },
+  {
+    "icon": "Google",
+    "name": "OpenAI Gemini",
+    "link": "https://openai-gemini.davidingplus.cn/"
   }
 ]
