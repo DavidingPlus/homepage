@@ -28,5 +28,10 @@
     "icon": "Google",
     "name": "OpenAI Gemini",
     "link": "https://openai-gemini.davidingplus.cn/"
+  },
+  {
+    "icon": "SolarPanel",
+    "name": "Frps Dash",
+    "link": "https://frps-dash.davidingplus.cn/"
   }
 ]
