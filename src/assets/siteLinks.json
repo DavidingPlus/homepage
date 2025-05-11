@@ -20,6 +20,11 @@
     "link": "https://my-arxiv.davidingplus.cn/"
   },
   {
+    "icon": "Code",
+    "name": "Rtems Kernel",
+    "link": "https://rtems.davidingplus.cn/lxr/source"
+  },
+  {
     "icon": "CompactDisc",
     "name": "Meting API",
     "link": "https://meting-api.davidingplus.cn/"
